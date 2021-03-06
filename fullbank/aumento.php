@@ -1,10 +1,13 @@
 <?php
 
+    const UP10 = 1.10;
+    const UP20 = 1.20;
+
     $nome = $_GET["nome"];
     $salarioAtual = $_GET["salario"];
 
-    $aumento10 = $salarioAtual * 0.10;
-    $aumento20 = $salarioAtual * 0.20
+    $aumento10 = $salarioAtual * UP10;
+    $aumento20 = $salarioAtual * UP20;
 ?>
 
 <!DOCTYPE html>
@@ -16,20 +19,20 @@
 </head>
 <body>
     <?php
-        if($salarioAtual == 5000){
+        if($salarioAtual <= 5000){
     ?>
-       <h1>O <?=$nome ?> passsará a receber <?= $aumento10 ?></h1>
+       <h1>O <?=$nome ?> passará a receber <?= $aumento20 ?></h1>
 
     <?php    
         }else{
     ?>
-       <h1>O <?=$nome ?> passsará a receber <?= $aumento10 ?></h1>
+       <h1>O <?=$nome ?> passará a receber <?= $aumento10 ?></h1>
     <?php
         }
     ?>
 
     
 
-    <button><a href="index.php">Calcular novo Frete </a></button>
+    <button><a href="index.php">Calcular novo Aumento </a></button>
 </body>
 </html>

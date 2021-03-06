@@ -7,9 +7,9 @@
     <title>Aumento</title>
 </head>
 <body>
-    <!-- Para calcular frete -->
+    <!-- Para calcular aumento -->
 
-    <form>
+    <form method ="GET" action="aumento.php">
         <h1>Calculo de aumento salarial</h1>
         <div class="input-group">
             <label for="nome">Nome</label>
